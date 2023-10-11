@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 500,
+  "width": 500,
+  "title": "Country Carbon Emissions based on GDP",
+  "data": {
+    "url": "https://raw.githubusercontent.com/beccanga/FIT3179W10/main/data/country_profile_variables.csv"
+  },
+    "params": [
+    {
+      "name": "Population",
+
+      "value": 0,
+      "bind": {"input": "range", "min": 0, "max": 1000000, "step": 1000}
+    }
+  ],
+  "selection": {
+    "region_selection": {
+      "type": "multi", "fields": ["Region"], "bind": "legend"
+    }
+  },
+
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "GDP",
+      "type": "quantitative",
+      "title":"Country GDP",
+      "axis": {"tickCount": 7},
+      "scale": {"type": "log",  "domain":[1, 10000000]}
+    },
+    "y": {
+      "field": "CO2emissionestimates",
+      "type": "quantitative",
+      "title": "CO2 Emission Estimates",
+      "axis": { "tickCount": 6},
+      "scale": {"type": "log", "domain":[1, 1000000]}
+    },
+    "size": {"field": "Population", "type": "quantitative",  "scale": {"range": [30, 500]}
+},
+    "fill": {"field": "Region",  "type": "nominal","scale": {"domain":["SouthernAsia", "SouthernEurope", "NorthernAfrica", "Polynesia", "MiddleAfrica","Caribbean", "Oceania","WesternAsia", "WesternEurope", "EasternEurope", "CentralAmerica"], "range": ["#e41a1c", "#984ea3", "#ff7f00", "#a6cee3", "#377eb8", "#a65628"]}},
+    "color": {"field": "Region",  "type": "nominal","scale": {"domain":["SouthernAsia", "SouthernEurope", "NorthernAfrica", "Polynesia", "MiddleAfrica","Caribbean", "Oceania","WesternAsia", "WesternEurope", "EasternEurope", "CentralAmerica"], "range": ["#e41a1c", "#984ea3", "#ff7f00", "#a6cee3", "#377eb8", "#a65628"]}
+    },
+    "opacity": {
+      "condition": {"selection": "region_selection", "value": 0.8},
+      "value": 0.2
+    },
+    "tooltip": [
+      {"field": "country", "type": "nominal"},
+      {"field": "Population", "type": "quantitative", "format": ","},
+
+      {"field": "GDP", "type": "quantitative", "format": ","},
+      {"field": "CO2emissionestimates", "type": "quantitative", "format": ","}
+    ]
+  }
+}
