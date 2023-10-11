@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Worldwide Population",
+    "title": 1000,
     "width": "container",
     "height": 400,
     "projection": {
