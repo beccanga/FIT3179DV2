@@ -5,8 +5,6 @@
     "title": "Population by Region",
     "data": {
       "url": "https://raw.githubusercontent.com/beccanga/FIT3179DV2/main/data/country_profile_variables.csv"
-      
-    
     },
     "mark": "bar",
     "encoding": {
