@@ -21,7 +21,7 @@
 
   
 </head>
-<body style="background-color:#F3E1DD;" align ="center">
+<body>
   <div>
     <div class="page">
         <h1>What's Going On In The World?</h1>
@@ -35,6 +35,8 @@
             <div id="vis1"  class="vis-container"></div>
         </div>
       </div>
+    </div>
+
 
     <!-- end pure grid group -->
       
@@ -45,6 +47,7 @@
             <p> Worldwide Country's GDP, C02 Emission by Region</p>
             <div class="pure-u-1-2">
             <div id="vis2"  class="vis-container"></div>
+        </div>
       </div>
     </div>
     <!-- end pure grid group -->
@@ -57,7 +60,8 @@
             <p> These are the total population by region</p>
             <div class="pure-u-1-3">
             <div id="vis3"  class="vis-container"></div>
-      </div>
+            </div>
+        </div>
     </div>
     <!-- end pure grid group -->
       
@@ -66,9 +70,6 @@
         var spec1 = "js/30720591Chart1.vg.json";
         var spec2 = "js/30720591Chart2.vg.json";
         var spec3 = "js/30720591Chart3.vg.json";
-       
-    
-        vegaEmbed('#vis3', spec3, { "actions": false });
     
         vegaEmbed('#vis1', spec1, { "actions": false }).then(function (result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -77,6 +78,10 @@
         vegaEmbed('#vis2', spec2, { "actions": false }).then(function (result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
+            
+        vegaEmbed('#vis3', spec3, { "actions": false }).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          }).catch(console.error);
     
       </script>
 
