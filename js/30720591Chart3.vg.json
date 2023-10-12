@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 1000,
+    "width": 800,
     "height": 500,
     "title": "Population by Region",
     "data": {
@@ -31,7 +31,11 @@
             ]
         },
         "title": "Region"        
-      }
-    },
+      },
+      "tooltip": [
+      {"field": "Region", "type": "nominal"},
+      {"field": "Population", "type": "quantitative", "format": ","}
+    ]
+  },
     "config": {}
-  }
+}
