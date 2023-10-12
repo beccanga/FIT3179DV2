@@ -8,10 +8,10 @@
   },
     "params": [
     {
-      "name": "Population",
+      "name": "CO2emissionestimates",
 
       "value": 0,
-      "bind": {"input": "range", "min": 0, "max": 1000000, "step": 1000}
+      "bind": {"input": "range", "min": 0, "max": 100000, "step": 1000}
     }
   ],
   "selection": {
@@ -43,6 +43,8 @@
     "Polynesia", "South-easternAsia", "SouthAmerica", "SouthernAfrica", "SouthernAsia", "SouththernEurope", "WesternAfrica", "WesternAsia", "WesternEurope"
     
     ], "range": [
+      
+      
             "#E2C2C6", "#B9929F", "#9C528B","#610F7F", "#BA2C73", "#9AD5CA", "#ACDDE7",
             "#ADB9E3", "#A379C9", "#B744B8","#D6F6DD","#DAC4F7","#F4989C","#EBD2B4", "#ACECF7",
             "#CDC7E5", "#779CAB", "#FFD9DA", "#F3DE8A", "#89023E", "#CC7178"
