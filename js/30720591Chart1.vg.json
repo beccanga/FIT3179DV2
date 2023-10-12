@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "World Population",
     "width": 800,
     "height": 450,
     "data": {
@@ -102,7 +101,6 @@
     ],
     "config": 
       {
-        "title": {"fontSize": 25, "dy": -6}, 
         "view": {"stroke": "transparent"},
         "background" : "#F3E1DD",
         "legend": {
