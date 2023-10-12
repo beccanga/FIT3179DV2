@@ -63,7 +63,7 @@
  "config": 
     {
       "title": {"fontSize": 25, "dy": -6},
-      "background" :"white",
+      "background" : "#F3E1DD",
       "view": {"stroke": "transparent"},
       "legend": {
         "titleFontSize": 12,

@@ -1,7 +1,7 @@
 
 body *{
     font-family: 'Open Sans', sans-serif;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 h1 {
@@ -27,7 +27,7 @@ body {
 
 .page {
     width: 1000px;
-    background-color: white ;
+    background-color: #F3E1DD ;
     margin: auto;
     padding: 50px;
     padding-top: 35px;
@@ -67,7 +67,7 @@ p {
 
 center{
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     justify-content: center;
     display: flex;
   }

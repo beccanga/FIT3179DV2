@@ -104,6 +104,7 @@
       {
         "title": {"fontSize": 25, "dy": -6}, 
         "view": {"stroke": "transparent"},
+        "background" : "#F3E1DD",
         "legend": {
           "offset": -20, 
           "titleFontSize": 12,
