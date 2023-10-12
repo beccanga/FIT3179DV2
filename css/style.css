@@ -5,10 +5,14 @@ body *{
 
 h1 {
     font-weight: 900;
+	text-align: center;
+	font-size: 40px;
 }
 
 h2 {
     font-weight: 700;
+    text-align: center;
+	font-size: 40px;
 }
 
 }
@@ -23,10 +27,10 @@ body {
 
 .page {
     width: 1000px;
-    background-color: #FFE6E8 ;
+    background-color: white ;
     margin: auto;
-    padding: 60px;
-    padding-top: 50px;
+    padding: 50px;
+    padding-top: 35px;
 }
 
 .vis-container {
