@@ -8,7 +8,7 @@
   },
     "params": [{
       "name" : "Region", 
-      "select" : {"type": "point", "fields":["series"]},
+      "select" : {"type": "point", "fields":["Region"]},
       "bind": {"legend": "dblclick"}
     }
   ],

@@ -1,39 +1,73 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 500,
-    "title": "Population by Region",
-    "data": {
-      "url": "https://raw.githubusercontent.com/beccanga/FIT3179DV2/main/data/country_profile_variables.csv"
-    },
-    "mark": "bar",
-    "encoding": {
-      "x": {
-        "field": "Region",
-        "title": "Region",
-        "type": "nominal"
-      },
-      "y": {
-        "field": "Population",
-        "type": "quantitative",
-        "title": "Population"
-      },
-         "color": {
-         "field": "Region",
-         "type": "nominal",
-         "scale": {
-            "range": [
-            "#E2C2C6", "#B9929F", "#9C528B","#610F7F", "#BA2C73", "#9AD5CA", "#ACDDE7",
-            "#ADB9E3", "#A379C9", "#B744B8","#D6F6DD","#DAC4F7","#F4989C","#EBD2B4", "#ACECF7",
-            "#CDC7E5", "#779CAB", "#FFD9DA", "#F3DE8A", "#89023E", "#CC7178"
-            ]
-        },
-        "title": "Region"        
-      },
-      "tooltip": [
-      {"field": "Region", "type": "nominal"},
-      {"field": "Population", "type": "quantitative", "format": ","}
-    ]
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 500,
+  "title": "Population by Region",
+  "data": {
+    "url": "https://raw.githubusercontent.com/beccanga/FIT3179DV2/main/data/country_profile_variables.csv"
   },
-    "config": {}
+  "selection": {
+      "series": {
+        "type": "multi",
+        "encodings": ["color"],
+        "on": "click",
+        "bind": "legend"}
+},
+
+"transform":[
+  {"filter": {"selection": "series"}}
+],
+"mark": {"type": "text", "dy": -5},
+"encoding": {"text": {"field": "1"}},
+
+
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "param": "Region",
+      "field": "Region",
+      "title": "Region",
+       "axis": {"tickCount": 2},
+      "type": "nominal"
+    },
+    "y": {
+      "param": "Population",
+      "field": "Population",
+      "type": "quantitative",
+      "axis": {"tickCount": 2},
+      "title": "Population"
+    },
+    "color": {
+    "field": "Region",
+    "type": "nominal",
+    "scale": {"domain":["Carribean", "CentralAmerica", "CentralAsia", "EsternAfrica", "EasternAsia", "EasternEurope", "Melanesia",
+  "Micronesia", "MiddleAfrica", "NothernAfrica","NorthernAmerica","NorthernEurope","Oceania",
+  "Polynesia", "South-easternAsia", "SouthAmerica", "SouthernAfrica", "SouthernAsia", "SouththernEurope", "WesternAfrica", "WesternAsia", "WesternEurope"],
+  "range": [
+  "#BEE9E8", "#62B6CB", "#1B4965","#CAE9FF", "#5FA8D3", 
+  "#C0BDA5", "#CC978E","#F39C6B", "#FF3864", "#261447",
+  "#DFD9E2","#C3ACCE","#89909F","#538083", "#2A7F62",
+  "#212738", "#F97068", "#D1D646", "#57C4E5", "#EBBAB9", "#C9C5BA", "#407076"]
+  },
+    "opacity": {
+      "condition": {"param": "selection", "value": 1}, "value": 0.2
+    },
+
+      "title": "Region"        
+    },
+    "tooltip": [
+    {"field": "Region", "type": "nominal"},
+    {"field": "Population", "type": "quantitative", "format": ","}
+  ]
+},
+ "config": 
+    {
+      "title": {"fontSize": 25, "dy": -6},
+      "background" :"white",
+      "view": {"stroke": "transparent"},
+      "legend": {
+        "titleFontSize": 12,
+        "labelFontSize": 12
+      }
+}
 }
