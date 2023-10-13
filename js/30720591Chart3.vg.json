@@ -61,7 +61,7 @@
 },
  "config": 
     {
-      "background" : "#E8D6CB",
+      "background" : "#F3F9E3",
       "view": {"stroke": "transparent"},
       "legend": {
         "titleFontSize": 12,
