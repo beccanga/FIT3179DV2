@@ -69,10 +69,10 @@
       "value": 0.2
     },
     "tooltip": [
-      {"field": "country", "type": "nominal"},
+      {"field": "country", "title": "Country","type": "nominal"},
       {"field": "Population", "type": "quantitative", "format": ","},
       {"field": "GDP", "type": "quantitative", "format": ","},
-      {"field": "CO2emissionestimates", "type": "quantitative", "format": ","}
+      {"field": "CO2emissionestimates", "title": "C02 Emission Estimates","type": "quantitative", "format": ","}
     ]
   },
    "config": 
