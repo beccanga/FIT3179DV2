@@ -107,7 +107,7 @@
         "offset": -20, 
         "titleFontSize": 12,
         "labelFontSize": 12,
-        "orient": "bottom-left"
+        "orient": "top-right"
       }
     }
 }
