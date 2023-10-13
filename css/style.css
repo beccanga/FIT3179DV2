@@ -1,6 +1,5 @@
 .body {
     font-family: "Times New Roman", Times, serif;
-    text-align: center;
 }
 
 body {
@@ -21,16 +20,17 @@ h2 {
 	font-weight: bolder;
 	text-align: center;
     margin-top: 0px;
-	/* width: 550px;
-	padding-top: 10px; */
-	/* padding-bottom: 10px; */
+	width: 550px;
+	padding-top: 10px; 
+    padding-bottom: 10px;
 }
 
 p 
 {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
-    font-size: 25px;
+    font-weight: bolder;
+    font-size: 35px;
 	color: black;
 }
 
