@@ -26,16 +26,18 @@
       "param": "Region",
       "field": "Region",
       "title": "Region",
-       "axis": {"tickCount": 2},
+       "axis": {"tickCount": 3},
       "type": "nominal"
     },
     "y": {
       "param": "Population",
       "field": "Population",
+      "aggregate": "sum",
       "type": "quantitative",
-      "axis": {"tickCount": 2},
+      "axis": {"tickCount": 3},
       "title": "Population"
     },
+      
     "color": {
     "field": "Region",
     "type": "nominal",
@@ -56,7 +58,9 @@
     },
     "tooltip": [
     {"field": "Region", "type": "nominal"},
-    {"field": "Population", "type": "quantitative", "format": ","}
+    {"field": "Population", "type": "quantitative", "format": ","},
+    {"field": "CO2emissionestimates", "title": "C02 Emission Estimates","type": "quantitative", "format": ","}
+    
   ]
 },
  "config": 
