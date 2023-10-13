@@ -29,13 +29,14 @@ h2 {
 p 
 {
     font-family: "Times New Roman", Times, serif;
-    font-size: 10px;
+    text-align: center;
+    font-size: 25px;
 	color: black;
 }
 
 
 .page {
-    width: 1150px;
+    width: 1500px;
     background-color: #EDE7D9;
     margin: auto;
     padding: 50px;
