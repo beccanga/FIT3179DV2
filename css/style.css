@@ -59,7 +59,10 @@ p
 .pure-g {
     margin-bottom: 25px;
 }
-
+.pure-1-2 {
+    margin-bottom: 25px;
+    align-items: center;
+}
 .small-font {
     font-size: 14px;
 }
