@@ -20,17 +20,16 @@ h2 {
 	font-weight: bolder;
 	text-align: center;
     margin-top: 0px;
-	width: 550px;
+	/* width: 550px;
 	padding-top: 10px; 
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
 }
 
 p 
 {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
-    font-weight: bolder;
-    font-size: 35px;
+    font-size: 50px;
 	color: black;
 }
 
