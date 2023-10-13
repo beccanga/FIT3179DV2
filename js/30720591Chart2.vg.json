@@ -17,7 +17,8 @@
       "bind": "legend"}
   },
   "transform":[
-    {"filter": "datum.CO2emissionestimates > 0"}
+    {"filter": "datum.CO2emissionestimates > 0"},
+    {"filter": "datum.GDP > 0"}
   ],
   
   "mark": "point",
