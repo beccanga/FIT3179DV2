@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
-    "height": "container",
+    "height": 500,
     "data": {
       "url": "https://raw.githubusercontent.com/beccanga/FIT3179DV2/main/js/ne_110m_admin_0_countries.topojson",
       "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
