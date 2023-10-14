@@ -23,7 +23,7 @@
             "title": "Country"
         },
     "tooltip": [
-      {"field": "country", "type": "nominal"},
+      {"field": "country", "type": "nominal", "title": "Country"},
       {"field": "Imports", 
       "title": "International trade: Exports (million US$)",
       "type": "quantitative", "format": ","}],
